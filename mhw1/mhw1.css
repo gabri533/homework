@@ -1,0 +1,205 @@
+header {
+    display: flex;
+    background-image: url(https://www.vconsulting.it/wp-content/uploads/2019/05/sardegna-vigneti-riconversione-valore-consulting.jpg);
+    height: 450px;
+    flex-direction: column;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    padding: 10px;
+    z-index: 1;
+}
+
+    header h1 {
+        color: white;
+        text-transform: capitalize;
+        font-family: 'Syne Mono', monospace;
+        font-size: 100px;
+        text-align: center;
+        z-index: 1;
+    }
+
+        header h1 em {
+            font-size: 40px;
+            display: block;
+            text-align: center;
+        }
+
+
+nav #links {
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 15px;
+    font-style: normal;
+    color: white;
+    padding: 5px 15px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    border-radius: 100px;
+    border: 2px solid white;
+    cursor: pointer;
+    z-index: 1;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    
+    flex-direction: column;
+    margin: 50px 125px;
+    text-align: center;
+}
+
+
+.contenuto h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 30px;
+    color: #662929;
+    font-style: normal;
+}
+
+.contenuto p {
+    flex-direction: column;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+    border-top: 7px solid antiquewhite;
+    padding: 5px;
+}
+
+
+
+footer {
+    height: 100px;
+    background-color: black;
+    padding: 50px;
+}
+
+    footer div {
+        font-style: normal;
+        text-align: center;
+        font-size: 14px;
+        color: white;
+        font-family: 'Noto Sans JP', sans-serif;
+        text-transform: uppercase;
+        padding: 2px;
+    }
+
+    footer #dati {
+        margin-top: 8px;
+        border-top: 2px solid white;
+        text-align: center;
+    }
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (max-width: 500px) {
+    header {
+        height: 200px;
+        line-height: 1.2;
+    }
+}
+
+#menu {
+    display: none;
+}
+
+    #menu div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+@media (max-width: 500px) {
+    nav #links {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        z-index: 1;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .contenuto p {
+        width: 90%;
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 500px) {
+    section {
+        margin: 38px 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 2em;
+        letter-spacing: 4px;
+    }
+}
+
+@media (max-width: 500px) {
+    header h1 em {
+        font-size: 0.5em;
+        letter-spacing: 2px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contenuto p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 500px) {
+    footer div {
+        font-size: 10px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    img {
+        width: 80%;
+        height: 10%;
+    }
+}
