@@ -33,7 +33,7 @@ nav #links {
 
 header a {
     font-weight: bold;
-    font-family: inherit;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 15px;
     font-style: normal;
     color: white;
